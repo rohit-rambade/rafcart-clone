@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./output/tailwind.css" />
+  </head>
+
+  <body>
+    <!-- Header Start -->
+    <header class="py-4 shadow-sm bg-pink-100 lg:bg-white">
+      <!-- logo -->
+      <div class="container flex items-center justify-between">
+        <a href="#" class="block w-32">
+          <img src="images/logo.svg" alt="logo" class="w-full" />
+        </a>
+
+        <!-- search    -->
+        <div div class="w-full xl:max-w-xl lg:max-w-lg lg:flex relative hidden">
+          <span class="absolute left-4 top-3 text-lg text-gray-400">
+            <i class="fas fa-search"></i>
+          </span>
+
+          <input
+            type="text"
+            class="pl-12 w-full border border-r-0 border-primary p-3 rounded-l-md focus:ring-primary font-poppins"
+            placeholder="Search Here.."
+          />
+          <button
+            type="submit"
+            class="bg-primary border border-primary text-white px-8 font-poppins rounded-r-md hover:bg-transparent hover:text-primary transition"
+          >
+            Search
+          </button>
+        </div> 
+
+        <div class="space-x-4 flex items-center font-poppins ">
+          <a href="#" class="block text-center text-gray-700 hover:text-primary transition relative  "> 
+            <span class="absolute -right-0 -top-1 w-5 h-5 rounded-full flex items-center  justify-center bg-primary text-white text-xs ">5 </span>
+            <div class="text-2xl ">
+                <i class="far fa-heart"></i>
+            </div>
+            <div class="text-sm leading-3">
+                <span>Wish List</span>
+            </div>
+
+          </a>
+          <a href="#" class="block text-center text-gray-700 hover:text-primary transition relative  "> 
+            <span class="absolute -right-2 -top-1 w-5 h-5 rounded-full flex items-center  justify-center bg-primary text-white text-xs ">2 </span>
+            <div class="text-2xl ">
+                <i class="fas fa-bag-shopping"></i>
+            </div>
+            <div class="text-sm leading-3 ">
+                <span>Cart</span>
+            </div>
+
+          </a>
+          <a href="#" class="block text-center text-gray-700 hover:text-primary transition relative  "> 
+            
+            <div class="text-2xl ">
+                <i class="fas fa-user "></i>
+            </div>
+            <div class="text-sm leading-3">
+                <span>Account</span>
+            </div>
+
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+    <!-- Navbar Start -->
+    <nav class="bg-slate-900 hidden lg:block  font-poppins">
+        <div class="container  ">
+            <div class="flex ">
+                <!-- All Category -->
+                <div class="px-8  py-4 bg-primary flex items-center cursor-pointer group relative space-x-4 ">
+
+                    <span class="text-white ">
+                        <i class="fas fa-bars"></i>
+                    </span>
+                    <span class="capitalize  text-white ">
+                        all Categories
+                    </span>
+
+                    <div class="absolute left-0 w-full top-full  bg-white shadow-md py-3 visible opacity-0 group-hover:opacity-100 group-hover:visible transition duration-300 z-50 divide-y divide-gray-300 divide-dashed">
+                      <a href="#" class="px-6 py-3 flex items-center hover:bg-gray-200 transition">
+                        <span class="">
+                            Bed
+                        </span>
+                      </a>
+
+                      <a href="#" class="px-6 py-3 flex items-center hover:bg-gray-200 transition">
+                        <span class="">
+                            Bed
+                        </span>
+                      </a>
+                      <a href="#" class="px-6 py-3 flex items-center hover:bg-gray-200 transition">
+                        <span class="">
+                            Bed
+                        </span>
+                      </a>
+                      <a href="#" class="px-6 py-3 flex items-center hover:bg-gray-200 transition">
+                        <span class="">
+                            Bed
+                        </span>
+                      </a>
+                    </div>
+
+
+
+
+
+
+                </div>
+                 <!-- All Category  End-->
+                
+                <!-- NavMenu -->
+
+                <div class="flex items-center justify-between flex-grow pl-12">
+                    <div class="flex items-center space-x-6 text-base capitalize ">
+                        <a href="index.html" class="text-gray-200 hover:text-white transition" >Home</a>
+                        <a href="#" class="text-gray-200 hover:text-white transition">Shop</a>
+                        <a href="#" class="text-gray-200 hover:text-white transition">About Us</a>
+                        <a href="#" class="text-gray-200 hover:text-white transition">Contact Us</a>
+                    </div>
+                    <a href="#" class=" ml-auto text-gray-200 hover:text-white transition">Login & Register</a>
+                </div>
+
+                 <!-- NavMenu End -->
+
+
+
+            </div>
+
+        </div>
+
+
+
+
+    </nav>
+    <!-- Navbar End -->
+
+
+  </body>
+</html>
